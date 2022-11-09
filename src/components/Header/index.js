@@ -15,7 +15,7 @@ const Header = () => {
       <Navbar fontSize={20}>
         <Logo>
           <span>
-            <i class="fa-sharp fa-solid fa-car-side"></i>FavCar
+            <i className="fa-sharp fa-solid fa-car-side"></i>FavCar
           </span>
         </Logo>
         <Nav>

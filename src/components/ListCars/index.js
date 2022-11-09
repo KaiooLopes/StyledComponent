@@ -18,28 +18,38 @@ const ListCars = () => {
       <Cars
         img={eclipse}
         name="Mitsubishi Eclipse"
-        color={"rgba(50,90,50, 0.4)"}
+        color={"rgb(49, 253, 0)"}
         rank={1}
       />
       <Cars
         img={huracan}
         name="Lamborguini Huracan"
-        color={"rgb(0,0,200)"}
+        color={"rgb(49, 253, 0)"}
         rank={2}
       />
-      <Cars img={supra} name="Toyota Supra" color={"rgb(0,0,200)"} rank={3} />
+      <Cars
+        img={supra}
+        name="Toyota Supra"
+        color={"rgb(215, 134, 6)"}
+        rank={3}
+      />
       <Cars img={skyline} name="Skyline R34" color={"rgb(0,0,200)"} rank={4} />
-      <Cars img={gtr} name="Nissan Gtr" color={"rgb(0,0,200)"} rank={5} />
-      <Cars img={n350z} name="Nissan 350z" color={"rgb(0,0,200)"} rank={6} />
-      <Cars img={mustang} name="Ford Mustang" color={"rgb(0,0,200)"} rank={7} />
-      <Cars img={focus} name="Ford Focus" color={"rgb(0,0,200)"} rank={8} />
+      <Cars img={gtr} name="Nissan Gtr" color={"rgb(166, 168, 169)"} rank={5} />
+      <Cars img={n350z} name="Nissan 350z" color={"rgb(56, 55, 55)"} rank={6} />
+      <Cars
+        img={mustang}
+        name="Ford Mustang"
+        color={"rgb(150, 69, 0)"}
+        rank={7}
+      />
+      <Cars img={focus} name="Ford Focus" color={"rgb(0,0,250)"} rank={8} />
       <Cars
         img={veneno}
         name="Lamborguini Veneno"
-        color={"rgb(0,0,200)"}
+        color={"rgb(19, 48, 20)"}
         rank={9}
       />
-      <Cars img={golfGti} name="Golf Gti" color={"rgb(0,0,200)"} rank={10} />
+      <Cars img={golfGti} name="Golf Gti" color={"rgb(59, 35, 37)"} rank={10} />
     </SectionCars>
   );
 };
