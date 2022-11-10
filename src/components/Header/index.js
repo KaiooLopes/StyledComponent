@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   HeaderDiv,
   Navbar,
@@ -6,9 +7,21 @@ import {
   GlobalStyle,
   Title,
   Content,
+  HambuMenu,
 } from "./styles";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1133) {
+        setOpen(true);
+      } else if (window.innerWidth < 1133) {
+        setOpen(false);
+      }
+    });
+  }, []);
   return (
     <HeaderDiv>
       <GlobalStyle />
@@ -18,7 +31,12 @@ const Header = () => {
             <i className="fa-sharp fa-solid fa-car-side"></i>FavCar
           </span>
         </Logo>
-        <Nav>
+        <HambuMenu
+          className="fa-solid fa-caret-down"
+          onClick={() => setOpen(!open)}
+          open={open}
+        ></HambuMenu>
+        <Nav open={open}>
           <li>
             <a href="https://github.com/KaiooLopes">Projetos</a>
           </li>

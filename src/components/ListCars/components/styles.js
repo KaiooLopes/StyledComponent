@@ -4,20 +4,22 @@ export const Car = styled.div`
   background: url(${(props) => `${props.img}`});
   background-position: center;
   background-size: cover;
-  height: 450px;
-  flex: 1;
   transition: 0.8s;
   border-radius: 5px;
   cursor: pointer;
+  width: 90%;
 
-  &:hover {
-    flex: 6;
-  }
-
-  &:hover span,
-  &:hover h2 {
-    visibility: hidden;
-    opacity: 0;
+  @media (min-width: 1133px) {
+    height: 450px;
+    flex: 1;
+    &:hover {
+      flex: 6;
+    }
+    &:hover span,
+    &:hover h2 {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 `;
 

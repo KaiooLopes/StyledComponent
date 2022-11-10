@@ -6,7 +6,7 @@ const SelectedCar = ({ img }) => {
   const { selectedImg } = useContext(SelectedImgContext);
   const ref = useRef(null);
   useEffect(() => {
-    document.documentElement.scrollTop = 2008;
+    document.documentElement.scrollTop = ref.current.offsetTop;
   }, [selectedImg]);
 
   return (
